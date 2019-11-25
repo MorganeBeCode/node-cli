@@ -2,6 +2,8 @@
 
 const axios = require('axios');
 const countryList = require('country-list');
+const chalk = require('chalk');
+const log = console.log;
 
 function holidates() {
     let year = new Date().getFullYear();
@@ -10,12 +12,12 @@ function holidates() {
         let code = countryList.getCode(country[0]);
         axios.get(`https://date.nager.at/api/v2/publicholidays/${year}/${code}`)
             .then(function (response) {
-                console.log(`List of holidays for ${country[0]}:`);
+                log(chalk.bgWhite(chalk.cyan('List of holidays for ') + chalk.bold.magenta(country[0] + ':')));
                 let holidays = response.data;
                 holidays.forEach(element => {
                     let name = element.name;
                     let date = element.date;
-                    console.log(`${name}: ${date}`);
+                    log(chalk.green.bold.italic(name + ': ') + chalk.yellow(date));
                 });
             })
             .catch(function (error) {
