@@ -5,7 +5,7 @@
 
 ### Description
 
-A command line tool that takes a country name as parameter then return the national holidays for the current yeat.
+A command line tool that takes a country name as parameter then return the national holidays for the current year.
 
 ### Installation
 
