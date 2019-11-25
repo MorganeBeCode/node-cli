@@ -1,12 +1,12 @@
 # Node.JS: Holidates CLI
 
 - Author: Morgane Jansen
-- Version: 1.1.0
+- Version: 1.2.1
 - [Page NPM](https://www.npmjs.com/package/@morganebecode/holidates)
 
 ### Description
 
-A command line tool that takes a country name as parameter then return the national holidays for the current year.
+A command line tool that takes a country name and a year as parameters then return the national holidays for that year, or for the current year if no year was specified.
 
 ### Installation
 
@@ -14,7 +14,7 @@ A command line tool that takes a country name as parameter then return the natio
 
 ### How to use
 
-> \$ holidates [country]
+> \$ holidates [country][year (optional)]
 
 ### Resources
 

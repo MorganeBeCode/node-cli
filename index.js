@@ -6,10 +6,15 @@ const chalk = require('chalk');
 const log = console.log;
 
 function holidates() {
-    let year = new Date().getFullYear();
-    let country = process.argv.slice(2)
+    let country = process.argv.slice(2);
+    let year;
     if (country != "") {
         let code = countryList.getCode(country[0]);
+        if (country[1]) {
+            year = country[1];
+        } else {
+            year = new Date().getFullYear();
+        }
         axios.get(`https://date.nager.at/api/v2/publicholidays/${year}/${code}`)
             .then(function (response) {
                 log(chalk.bgWhite(chalk.cyan('List of holidays for ') + chalk.bold.magenta(country[0] + ':')));
