@@ -1,0 +1,27 @@
+{
+  "name": "@morganebecode/holidates",
+  "version": "1.0.0",
+  "description": "my first command-line tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "country-list": "^2.2.0"
+  },
+  "bin": {
+    "holidates": "./index.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorganeBeCode/node-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MorganeBeCode/node-cli/issues"
+  },
+  "homepage": "https://github.com/MorganeBeCode/node-cli#readme"
+}
