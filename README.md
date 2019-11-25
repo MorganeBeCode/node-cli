@@ -2,6 +2,7 @@
 
 - Author: Morgane Jansen
 - Version: 1.1.0
+- [Page NPM](https://www.npmjs.com/package/@morganebecode/holidates)
 
 ### Description
 
