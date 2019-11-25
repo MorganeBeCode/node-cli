@@ -1,6 +1,6 @@
 {
   "name": "@morganebecode/holidates",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "my first command-line tool",
   "main": "index.js",
   "scripts": {
